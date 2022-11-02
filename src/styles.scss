@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input, button {
+    border: none;
+    border-radius: 30px !important;
+}
