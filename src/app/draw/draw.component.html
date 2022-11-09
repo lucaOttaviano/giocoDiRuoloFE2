@@ -1,0 +1,10 @@
+<div id="generalDraw" class="center gap-3">
+    <div id="agencyCardsContainer" class="col-12 center gap-3">
+        <div *ngFor="let agency of agencies; let i = index" [id]="'agencyCard' + i"
+            class="agencyCard col-5 center py-4 gap-3 flex-column shadow" type="button" (click)="selectAgency(i)">
+            <img src="../../assets/sost.png" style="filter: invert(100%)" >
+            <span>{{agency.agencyName}}</span>
+        </div>
+    </div>
+    <app-loader *ngIf="drawing"></app-loader>
+</div>

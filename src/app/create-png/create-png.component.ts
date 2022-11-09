@@ -15,17 +15,15 @@ export class CreatePngComponent implements OnInit {
   }
 
   // controlla i campi nome png e nome azienda e manda l'Ipv4 al server
-  postIpv4(pngName: string, agencyName: string) {
-    
-    if (pngName != '' && agencyName != '') {
-      this.http.post<any>(this.ip.baseUrl, { pngName: pngName, agencyName: agencyName }).subscribe(data => {        
+  postIpv4(pngName: string) {
+
+    if (pngName != '') {
+      this.http.post<string>(this.ip.baseUrl + 'api/Ipv4/', { pngName: pngName }).subscribe(data => {
+        window.location.replace('/draw')
       })
     }
-    else if (pngName == '' ) {
+    else if (pngName == '') {
       alert('Scegli il nome del tuo personaggio')
-    }
-    else if(agencyName == '') {
-      alert('Scegli il nome della tua azienda')
     }
   }
 

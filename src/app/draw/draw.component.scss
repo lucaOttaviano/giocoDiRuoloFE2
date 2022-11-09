@@ -1,0 +1,19 @@
+#generalDraw {
+    width: 100%; 
+    min-height: 100vh;
+    background-color: var(--background);
+    #agencyCardsContainer {
+        flex-wrap: wrap;
+        .agencyCard {
+            transition: 0.3s;
+            background-color: #202020;
+            // min-height: 15rem;
+            border-radius: 30px;
+        }
+    }
+}
+
+.selected {
+    background: var(--accent) !important;
+    transform: scale(0.8);
+}

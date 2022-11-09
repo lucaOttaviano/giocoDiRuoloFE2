@@ -1,5 +1,4 @@
-<div id="generalCreatePng" class="center flex-column gap-3">
-    <input type="text" placeholder="Nome personaggio" class="p-3 text-center" #pngName>
-    <input type="text" placeholder="Nome azienda" class="p-3 text-center" #agencyName>
-    <button class="btn btn-primary" (click)="postIpv4(pngName.value, agencyName.value)">Conferma</button>
+<div id="generalCreatePng" class="center flex-column gap-4">
+    <input type="text" placeholder="Nome personaggio" class="p-3 text-center shadow" #pngName>
+    <button id="createPngBtn" class="btn" (click)="postIpv4(pngName.value)">Conferma</button>
 </div>

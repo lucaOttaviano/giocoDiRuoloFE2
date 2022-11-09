@@ -1,5 +1,12 @@
 #generalCreatePng {
-    min-height: 100vh; 
+    min-height: 100vh;
     width: 100%;
-    background-color: #202020;
+    background-color: var(--background);
+
+    #createPngBtn {
+        background-color: var(--accent);
+        color: var(--white);
+        border: none;
+        transition: 0.2s;
+    }
 }
